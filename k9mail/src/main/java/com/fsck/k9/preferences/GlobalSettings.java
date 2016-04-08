@@ -282,6 +282,9 @@ public class GlobalSettings {
         s.put("pgpSignOnlyDialogCounter", Settings.versions(
                 new V(45, new IntegerRangeSetting(0, Integer.MAX_VALUE, 0))
         ));
+        s.put("cryptoProvider", Settings.versions(
+                new V(46, new StringSetting(K9.NO_CRYPTO_PROVIDER))
+        ));
 
         SETTINGS = Collections.unmodifiableMap(s);
 
