@@ -93,7 +93,7 @@ public class Prefs extends K9PreferenceActivity {
     private static final String PREFERENCE_HIDE_USERAGENT = "privacy_hide_useragent";
     private static final String PREFERENCE_HIDE_TIMEZONE = "privacy_hide_timezone";
 
-    private static final String PREFERENCE_CRYPTO_APP = "crypto_app";
+    private static final String PREFERENCE_CRYPTO_PROVIDER = "crypto_provider";
     private static final String PREFERENCE_CRYPTO_SUPPORT_SIGN_ONLY = "crypto_support_sign_only";
 
     private static final String PREFERENCE_AUTOFIT_WIDTH = "messageview_autofit_width";
@@ -384,7 +384,7 @@ public class Prefs extends K9PreferenceActivity {
         mHideUserAgent.setChecked(K9.hideUserAgent());
         mHideTimeZone.setChecked(K9.hideTimeZone());
 
-        mCryptoProvider = (OpenPgpAppPreference) findPreference(PREFERENCE_CRYPTO_APP);
+        mCryptoProvider = (OpenPgpAppPreference) findPreference(PREFERENCE_CRYPTO_PROVIDER);
         mCryptoProvider.setValue(K9.getCryptoProvider());
         if (OpenPgpAppPreference.isApgInstalled(getApplicationContext())) {
             mCryptoProvider.addLegacyProvider(
