@@ -12,3 +12,12 @@ sudo: required
 
 script:
   - ./gradlew clean build
+
+deploy:
+  provider: releases
+  api_key:
+    secure: 9265a28a2c2a04fc7c52428a7d0b2298ba28196e
+  file: "k9mail/build/outputs/apk/k9mail-debug.apk"
+  skip_cleanup: true
+  on:
+    tags: true
