@@ -16,7 +16,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: 9265a28a2c2a04fc7c52428a7d0b2298ba28196e
+    secure: "TegZF9KG6Jvt1wijGfry5NHYRWc4hN85a8uuXoerZPDH0BqcfcibR94JMHlQZfzJqPBqEr2/rh51kyLuVQk/vwT8EQBo75OC0B8sm1D/5GpLQMIKB/XzgPYJyrLlr7ttcP5TKPVL0LdbIqLHUwKo1cDpa7tXaySuISKTFOuJLDNePZWLz6xiy+195Q0BYize/MLGkjsCID3kjkd3FPHGaIjuQJdFr8WO+JgVxZ/+OlD6gwQzizKDxha7uxhVxmdG317Ei2XnAAkG0HNxqUDIAO9APIWUKXH5Yq7Fkg6o6HzEjGepUv5ZYK9wlxTCtSYeLchgwtt0zS4PfFQppi+cnlgiTHDekt/1yLGc/5YHJ45mkBIVWWnuvfqJtRGCfr1e223v+qjeqKbq1OFp978gltzePujcQWmdejO99s+WKAtdTlqxgNfTxIjGfthrbg7fo09cKZHi9yXegjUYPhKsqA+ICAeLKmyOeM6Dk4pyI9o78ajtBxfQYBc3mNRMdWDyZsxTm/0lZOrcmku2kzQTnxmma9cq2parzVyNWj6MVzbrdfkiy1VVISNG0mEel25yCEdd0mJR4w2AxVbdyqQs8xeGFTtFQS3/g/wUWnPDZpw47OGBRLQ9m/bgS8c8rvE8CealvG6EAUCLWhqWlt+LwpfyEq5N7Dnvfjia2vr42JQ="
   file: "k9mail/build/outputs/apk/k9mail-debug.apk"
   skip_cleanup: true
   on:
