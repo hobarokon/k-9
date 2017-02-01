@@ -8,4 +8,7 @@ android:
 
 jdk: oraclejdk8
 
-script: ./gradlew testDebug
+sudo: required
+
+script:
+  - ./gradlew clean build
